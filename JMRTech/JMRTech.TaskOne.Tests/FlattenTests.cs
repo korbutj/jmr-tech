@@ -50,7 +50,7 @@ namespace JMRTech.TaskOne.Tests
         }
 
         [Fact]
-        public void Flatten_Diacritics_ReturnsFlattenedPerson()
+        public void Flatten_NameWithDiacritics_RemovesDiacritics()
         {
             // Arrange
             var mainEmail = "Andrzej@gmail.com";
@@ -92,7 +92,7 @@ namespace JMRTech.TaskOne.Tests
         }
 
         [Fact]
-        public void Flatten_SpecialCharacters_ReturnsFlattenedPerson()
+        public void Flatten_NameWithSpecialCharacters_RemovesSpecialCharacters()
         {
             // Arrange
             var mainEmail = "Andrzej@gmail.com";
