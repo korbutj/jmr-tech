@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace JMRTech.TaskTwo
 {
@@ -22,14 +21,14 @@ namespace JMRTech.TaskTwo
 
             IEnumerable<Account> acs = accounts.Where(a => emails.Contains(a.EmailAddress.Email));
 
-            var test = groups
+            var matches = groups
                 .SelectMany(g => g.People)
                 .Join<Person, Account, IEnumerable<EmailAddress>, (Account, Person)>(
                 acs, 
                 x => x.Emails.Select(e => e), 
                 i => new List<EmailAddress>() { i.EmailAddress }, 
                 (p, ac) => (ac, p));
-            personAccountMatches.AddRange(test);
+            personAccountMatches.AddRange(matches);
 
             return personAccountMatches;
         }

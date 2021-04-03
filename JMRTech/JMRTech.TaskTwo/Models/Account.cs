@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace JMRTech.TaskTwo.Models
+﻿namespace JMRTech.TaskTwo.Models
 {
     public class Account
     {
