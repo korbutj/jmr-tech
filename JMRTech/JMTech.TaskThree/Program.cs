@@ -8,7 +8,6 @@ namespace JMTech.TaskThree
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             var test = new List<IEnumerable<string>>()
             {
                 new List<string>()

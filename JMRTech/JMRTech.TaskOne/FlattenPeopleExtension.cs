@@ -13,10 +13,10 @@ namespace JMRTech.TaskOne
         /// <summary>
         /// Jako, że brakowało trochę danych musiałem przyjąć kilka założeń:
         /// 1) emailType = { "main", "alternative" }
-        /// 2) usuwanie znaków diakrytycznych z tekstu jest dosyć trick
+        /// 2) usuwanie znaków diakrytycznych z tekstu jest dosyć tricky
         ///     i spędziłem nad tym trochę czasu w jednym z projektów przy generowaniu emaili
         ///     stąd wiem, że nie obsłużę prawdopodobnie wszystkich przypadków (np. ł - nie jest diakrytyczne w .Netcie)
-        ///     (artykuł z którego ostantio korzystałem na temat usuwania znaków diakrytycznych: http://archives.miloush.net/michkap/archive/2007/05/14/2629747.html)
+        ///     (artykuł z którego ostatnio korzystałem na temat usuwania znaków diakrytycznych: http://archives.miloush.net/michkap/archive/2007/05/14/2629747.html)
         /// 3) gdy którakolwiek z danych jest null/pusty string po prostu przypisuje null/pusty string.
         /// 4) założyłem, że emaile oraz id'ki są w poprawnym formacie i nie normalizowałem ich.
         /// 
